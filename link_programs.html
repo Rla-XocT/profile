@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset=“UTF-8” />
+        <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+        <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
+        <meta property=“og:title” content=“르탄이 - 프로필 링크” />
+        <meta property=“og:description” content=“어서와 코딩은 처음이지?” />
+        <meta property=“og:image” content=“공유할 이미지” />
+        <title>르탄이 - 프로필 링크</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+
+            body{  /*body 태그는 앞에 . 안붙임*/ 
+                background-color: black;
+
+            }
+            .profile{ 
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+
+                border-radius: 100%;
+
+                border : 2px solid orange; 
+
+                background-image: url('icon.png'); /*사진 생성 코드 아래 3줄은 무조건 같이 다님*/
+                background-position: center;
+                background-size: cover;
+
+            } /*원 생성 코드*/
+            .main{
+                color: orange;
+                font-size: 20px;
+
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub{
+                color: orange;
+                font-size: 14px;
+
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap{
+                background-color: black;
+                width: 300px;
+                margin: 30px auto 0px auto; /*위 오른쪽 아래 왼쪽 시계방향*/
+                
+                
+                display: flex; /*내용물 정리할때 쓰는 displa-flex*/
+                flex-direction: column;  
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a{
+                width: 300px;
+                height: 50px;
+
+                background-color: white;
+                border-radius: 8px;
+
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+
+                display: flex; /*내용물 정리할때 쓰는 displa-flex*/
+                flex-direction: column;  
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none; /*하이퍼링크 밑불 없앨때 쓰는 코드*/
+
+                box-shadow: 3px 3px 5px 0px white; /*2개 오른쪽 밑으로 얼마나 갈지, 꼬리, 선명도*/
+            }
+            .wrap > a:hover{
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="profile"></div>
+            <h1 class="main">김기주</h1>
+            <p class="sub">한국을 먹을것이다.</p>     
+            <a target="g" href="https://soundcloud.com/rutmpzfbdrdp?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">SoundCloud</a>
+            <a target="b" href="https://www.instagram.com/itstrurlwn/">itstrurlwn_insta</a>
+            <a target="c" href="https://www.youtube.com/watch?v=rXrb0BDdo0c">동기부여 영상</a>
+            <a target="d" href="https://www.youtube.com/channel/UCBKCQ7aovL9kbfJn3SWxdYA">월이 창조주</a>
+        </div>
+       
+    </body>
+</html>
